@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LocationProviderClient</string>
+    <string name="btn_name">Get Location</string>
 </resources>

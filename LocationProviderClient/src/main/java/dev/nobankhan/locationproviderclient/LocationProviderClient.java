@@ -42,6 +42,7 @@ public class LocationProviderClient {
     //to use the methode requestpermission use second constructor
 
 
+
     public LocationProviderClient(@NonNull Context context)
     {
         this.context = context;
@@ -67,14 +68,16 @@ public class LocationProviderClient {
         return ((ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED);
     }
 
-    public void requestpermission() throws ClientException {
+    public void requestpermission() throws ClientException{
         if(activity == null)
         {
             throw new ClientException("Activity is null use Constructor LocationProviderClient(Context context, Activity activity);");
         }
         String PERMISSION_STRING[] = {Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION};
         ActivityCompat.requestPermissions(activity, PERMISSION_STRING, 100);
+
     }
+
 
     public boolean isGPSturnedON()
     {
