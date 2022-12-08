@@ -108,7 +108,7 @@ public class LocationProviderClient {
         }, Looper.getMainLooper());
     }
 
-   void turnonLocation() throws ClientException {
+   public void turnonLocation() throws ClientException {
         if(activity == null)
         {
             throw new ClientException("Activity is null use Constructor LocationProviderClient(Context context, Activity activity);");
