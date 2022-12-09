@@ -31,7 +31,7 @@ step-2: In your app add this to your build.gradle
 
 ```gradle
   dependencies {
-	        implementation 'com.github.Nobabkh:LocationProviderClient:1.0.0'
+	        implementation 'com.github.Nobabkh:LocationProviderClient:1.0.1'
 	}
 ```
 
