@@ -20,7 +20,7 @@ A Libary to Empliment LocationService on Android easily
 #### step-1: Add It to your settings.gradle file
 
 
-```java
+```gradle
   repositories {
 			...
 			maven { url 'https://jitpack.io' }
@@ -29,7 +29,7 @@ A Libary to Empliment LocationService on Android easily
 
 step-2: In your app add this to your build.gradle
 
-```java
+```gradle
   dependencies {
 	        implementation 'com.github.Nobabkh:LocationProviderClient:1.0.0'
 	}
