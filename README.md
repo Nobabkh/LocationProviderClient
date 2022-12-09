@@ -35,6 +35,14 @@ step-2: In your app add this to your build.gradle
 	}
 ```
 
+Add permission to AndroidManifest.xml 
+
+```xml
+	<uses-permission android:name="android.permission.INTERNET"/>
+    	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+```
+
 ### After implementetion It is easy to start just Initialize LocationProviderClient to get start
 
 ### Initialize from Activity
